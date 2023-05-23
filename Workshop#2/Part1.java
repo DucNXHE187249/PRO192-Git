@@ -6,7 +6,11 @@ public class Part1 {
         do {
             try {
                 int num;
-                Scanner sc = newInt();
+                Scanner sc = new Scanner(System.in);
+
+                num = sc.nextInt();
+
+
                 System.out.println("Enter the number" );
                 if (num < 1) throw new Exception();
                 System.out.println("The number is: "+ num);
