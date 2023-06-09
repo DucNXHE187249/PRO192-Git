@@ -1,6 +1,8 @@
 package DTO;
 
 import java.util.Scanner;
+import java.lang.Exception;
+
 
 public class Statue extends Item{
     private int weight;
