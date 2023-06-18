@@ -26,6 +26,6 @@ public class Colony extends Organization {
 
     @Override
     public String toString() {
-        return "The colony size is " + size + ", the colony's place is " + place;
+        return "The size of the colony is " + size + ", the place is " + place;
     }
 }

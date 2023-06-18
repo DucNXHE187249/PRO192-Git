@@ -18,6 +18,6 @@ public class BeeColony extends Colony implements Role {
 
     @Override
     public String toString() {
-        return "the colony’s type is " + type + ", size is about " + size + ", and the place is " + place;
+        return "The type of the colony is " + type + ", size is about " + size + ", and the place is " + place;
     }
 }
