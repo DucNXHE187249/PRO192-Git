@@ -1,7 +1,7 @@
 package DTO;
 
 public class Colony extends Organization {
-    private String place;
+    protected String place;
 
     public Colony() {
     }

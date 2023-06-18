@@ -1,7 +1,7 @@
 package DTO;
 
 public class BeeColony extends Colony implements Role {
-    private String type;
+    protected String type;
 
     public BeeColony() {
     }
