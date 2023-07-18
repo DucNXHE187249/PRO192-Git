@@ -1,11 +1,28 @@
-public class Car{
+public class Car implements Comparable<Car>{
+
     private String maker;
     private int rate;
 
-    public Car(String maker, int rate) {
-        this.maker = maker;
-        this.rate = rate;
+    @Override
+    public int compareTo (Car t){
+        if (rate < t.rate){
+            return (-1);
+        }
+        else if (rate == t.rate){
+            return maker.compareToIgnoreCase(t.maker);
+        }
+        else return 1;
     }
+
+    public Car(){
+        maker = "";
+        rate = 0;
+    }
+    public Car(String xMaker, int xRate) {
+        maker = xMaker;
+        rate = xRate;
+    }
+
 
     public String getMaker() {
         return maker;
@@ -19,7 +36,8 @@ public class Car{
         this.maker = maker;
     }
 
-    public void setRate(int rate) {
-        this.rate = rate;
+    public void setRate(int xRate) {
+        this.rate = xRate;
     }
+
 }

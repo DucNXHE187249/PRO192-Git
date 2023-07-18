@@ -31,7 +31,7 @@ public class Student {
 
     public void setName(String name) {
         this.name = name.trim().toUpperCase();
-        if (name.length() > 0) this.name = name
+        if (name.length() > 0) this.name = name;
     }
 
     public void setMark(int mark) {

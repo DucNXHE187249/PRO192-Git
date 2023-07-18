@@ -11,6 +11,10 @@ public class Car {
         return maker;
     }
 
+    public void setMaker(String maker) {
+        this.maker = maker;
+    }
+
     public int getPrice() {
         return price;
     }
@@ -19,6 +23,7 @@ public class Car {
         this.price = price;
     }
     
+    @Override
     public String toString(){
         return "The maker is " + maker + " and the price is " + price;
     }
